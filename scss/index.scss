@@ -1,0 +1,48 @@
+@use "./config";
+@use "./card";
+
+:root {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 4em 2em;
+  background-color: config.$clr-background-primary;
+  color: config.$clr-primary;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.25em;
+  font-weight: 800;
+}
+
+.subheading {
+  margin-top: 1em;
+  color: config.$clr-secondary;
+  letter-spacing: 0.05em;
+}
